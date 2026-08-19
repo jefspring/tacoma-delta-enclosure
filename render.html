@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#15181d}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.181.0/build/three.module.js"}}</script>
+</head><body><canvas id="c" width="1800" height="1150"></canvas>
+<script type="module">
+import * as THREE from 'three';
+import {build} from './model.js';
+const canvas=document.getElementById('c');
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x15181d);
+const camera=new THREE.PerspectiveCamera(42,1800/1150,0.1,900);
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true});
+renderer.setSize(1800,1150,false);
+scene.add(new THREE.AmbientLight(0xffffff,.55));
+const k=new THREE.DirectionalLight(0xffffff,.85);k.position.set(30,35,25);scene.add(k);
+const f=new THREE.DirectionalLight(0x88aaff,.35);f.position.set(-25,10,-18);scene.add(f);
+const r=new THREE.DirectionalLight(0xffd9a0,.3);r.position.set(0,-15,25);scene.add(r);
+build(THREE,scene,renderer);
+// auto-fit: sprites carry the widest extent, so frame to the whole group
+const bb=new THREE.Box3().setFromObject(scene);
+const ctr=bb.getCenter(new THREE.Vector3()), sz=bb.getSize(new THREE.Vector3());
+// fit vertical and horizontal extents independently, then back off for depth
+const vFOV=THREE.MathUtils.degToRad(camera.fov);
+const hFOV=2*Math.atan(Math.tan(vFOV/2)*camera.aspect);
+const distV=sz.y/(2*Math.tan(vFOV/2));
+const distH=sz.x/(2*Math.tan(hFOV/2));
+const dist=Math.max(distV,distH)*1.14 + sz.z*0.5;
+const dir=new THREE.Vector3(0.72,0.40,0.57).normalize();
+camera.position.copy(ctr.clone().add(dir.multiplyScalar(dist)));
+camera.lookAt(ctr);
+console.log('bbox',JSON.stringify(sz),'distV',distV.toFixed(1),'distH',distH.toFixed(1),'dist',dist.toFixed(1));
+renderer.render(scene,camera);
+document.title='RENDER_DONE';
+</script></body></html>

@@ -54,7 +54,7 @@ a{color:var(--accent)}
 </head>
 <body>
 <header><div class="wrap">
-<div class="kicker">2013 Tacoma · Bed Power System · Rev B</div>
+<div class="kicker">2013 Tacoma · Bed Power System · Rev E</div>
 <h1>EcoFlow DELTA 2 Max — Marine Plywood Enclosure</h1>
 <p class="sub">A weather-sealed, convertible-ventilation enclosure for a 50 lb power station living in a truck bed under a rooftop tent. Ventilation moved to the short ends so the crowded long faces no longer matter.</p>
 </div></header>
@@ -74,24 +74,22 @@ a{color:var(--accent)}
 <span><i class="sw" style="background:#5A6068"></i>Vents &amp; hardware</span>
 </div>
 <div class="cards">
-<div class="card"><div class="v">26.4 × 14.25 × 15.9"</div><div class="k">Exterior</div></div>
+<div class="card"><div class="v">25.9 × 14.25 × 16.4"</div><div class="k">Exterior</div></div>
 <div class="card"><div class="v">~24 lb</div><div class="k">Enclosure weight</div></div>
-<div class="card"><div class="v">2 × 120 mm</div><div class="k">End-mounted fans</div></div>
+<div class="card"><div class="v">1 × 120 mm</div><div class="k">Lid exhaust fan</div></div>
 <div class="card"><div class="v">40 CFM</div><div class="k">Airflow required</div></div>
 </div>
-<div class="rev"><b>Rev B change.</b> Fans moved from the long walls to the short ends so both intakes and exhausts breathe down the open length of the bed rather than into a bed side or the propane compartment. This forced a drop from 140 mm to 120 mm fans and a longer, narrower box — reasoning in section 03.</div>
+<div class="rev"><b>Rev E — verified against the actual unit.</b> Photographs of the DELTA 2 Max confirm the LCD, power button and USB cluster sit on one <b>short end</b> and all six AC sockets plus every input sit on the other. The long 19.6 in faces are the unit's own ventilation. Ventilation is therefore passive slots low on both long walls with a single lid-mounted exhaust fan under a rain cap. Both short ends stay free for connections and controls.</div>
 </section>
 
 <section>
 <h2><span class="num">01</span>Dimensions</h2>
 <table><thead><tr><th></th><th>Length</th><th>Width</th><th>Height</th></tr></thead><tbody>
 <tr><td>DELTA 2 Max</td><td>19.6"</td><td>9.5"</td><td>12.0"</td></tr>
-<tr><td><strong>Interior</strong></td><td><strong>25.625"</strong></td><td><strong>13.5"</strong></td><td><strong>15.0"</strong></td></tr>
-<tr><td><strong>Exterior</strong></td><td><strong>26.375"</strong></td><td><strong>14.25"</strong></td><td><strong>15.875"</strong></td></tr>
-</tbody></table>
+<tr><td><strong>Interior</strong></td><td><strong>25.125"</strong></td><td><strong>13.5"</strong></td><td><strong>15.5"</strong></td></tr><tr><td><strong>Exterior</strong></td><td><strong>25.875"</strong></td><td><strong>14.25"</strong></td><td><strong>16.375"</strong></td></tr></tbody></table>
 <h3>Clearance budget</h3>
-<p class="lead">Rev A had 2.5" plenums on the long faces and 1.575" at the ends. Rev B inverts that: the ends now carry the fans and need the room, while the long faces only need enough channel for the DELTA's own fans to breathe.</p>
-<table><thead><tr><th>Face</th><th>Rev A</th><th>Rev B</th><th>Why</th></tr></thead><tbody>
+<p class="lead">Rev A had 2.5" plenums on the long faces and 1.575" at the ends. Rev E inverts that: the ends now carry the fans and need the room, while the long faces only need enough channel for the DELTA's own fans to breathe.</p>
+<table><thead><tr><th>Face</th><th>Rev A</th><th>Rev E</th><th>Why</th></tr></thead><tbody>
 <tr><td>Both short ends</td><td>1.575"</td><td><strong>3.0"</strong></td><td>1" fan depth + 2" clear to the port face</td></tr>
 <tr><td>Both long faces</td><td>2.5"</td><td><strong>2.0"</strong></td><td>Side channels. The DELTA's own fans breathe here</td></tr>
 <tr><td>Below</td><td>1.0"</td><td>1.0"</td><td>Foam base</td></tr>
@@ -113,98 +111,112 @@ a{color:var(--accent)}
 </section>
 
 <section>
-<h2><span class="num">03</span>Ventilation — end mounted</h2>
-<div class="note warn"><b>Why the fans dropped to 120 mm.</b> The DELTA's ports are on its short ends, so an end-mounted fan sits in front of the port face. A 140 mm fan is 5.51" square and there is nowhere to tuck it: the unit leaves only 2" of headroom above and 2" of channel beside it. A 120 mm fan at 4.72" fits the end wall with room to route cables around its corners, and the <b>NF-F12 industrialPPC-3000</b> actually has better focused static pressure than the A14 for pushing through louvres.</div>
-<p><strong>Two Noctua NF-F12 industrialPPC-3000 PWM</strong> — 120 mm, 110 CFM, 7.63 mmH₂O static pressure, 4.2 W each.</p>
-<table><thead><tr><th></th><th>Wall</th><th>Height above interior floor</th><th>Offset from centreline</th></tr></thead><tbody>
-<tr><td><strong>Intake</strong></td><td>Rear end wall (tailgate side)</td><td>4.5" — low</td><td>2.5" toward one long wall</td></tr>
-<tr><td><strong>Exhaust</strong></td><td>Front end wall</td><td>11.5" — high</td><td>2.5" toward the <em>opposite</em> long wall</td></tr>
+<h2><span class="num">03</span>Ventilation</h2>
+<div class="note warn"><b>The unit's own fans are on the long faces.</b> Both 19.6 in sides are vent grille almost end to end. Those two 2 in plenums are its lungs — <b>no penetrations anywhere on the long walls above the intake slot band</b>, and nothing may sit tight against them internally.</div>
+<h3>Intake — passive, no fan</h3>
+<p>Three slots per long wall, <code>6 × 0.875 in</code> each, in a band centred 2.44 in above the interior floor. Roughly 16 in² per side against the ~14 in² that 40 CFM needs at 400 ft/min, so about 2× margin.</p>
+<p>Slots on <strong>both</strong> long walls deliberately: if one face ends up tight against a bed side, the other still feeds. A passive slot needs an inch or two of standoff, not the 3–4 in a fan face would demand — which is the siting problem that finally disappears.</p>
+<p>Each slot gets an external <strong>drip hood</strong> so the actual air entry faces downward. Driving rain has to turn a corner and climb to get in.</p>
+<h3>Exhaust — one lid fan under a rain cap</h3>
+<p>A single <strong>Noctua NF-F12 industrialPPC-3000 PWM</strong>, 120 mm, 110 CFM, 4.2 W, lying <em>flat</em> in the 2.5 in top plenum. A 120 mm axial is only 25 mm thick, so it fits the plenum easily when it blows vertically.</p>
+<p>Above it: a <strong>coaming ring</strong> standing proud of the lid so surface water cannot run into the opening, then a <strong>raised cap</strong> on three standoffs. Air leaves radially under the skirt; nothing falls in vertically. The exit annulus is roughly 33 in² against a 15.9 in² fan opening, so the cap is not a restriction.</p>
+<h3>Why this beats every earlier revision</h3>
+<p>Cool air enters low, hot air leaves high. <strong>Buoyancy now pushes the same direction as the fan</strong> instead of fighting it, so the fan can run slower for the same result and there is still passive airflow if it ever fails.</p>
+<p><code>Q = 3.16 × W ÷ ΔT°F  →  3.16 × 150 ÷ 12 = 40 CFM</code> for a 12 °F rise at the worst case of 800 W charging while inverting for the Wave 2. One 110 CFM fan derated 50 % by the cap and louvres still clears it.</p>
+</section>
+
+<section>
+<h2><span class="num">04</span>Screen access and the power button</h2>
+<p>The screen end carries the LCD, four USB-A, two USB-C, a USB ON/OFF button and the main power button. Nothing plugs in here in normal use, so this end gets the <strong>tighter 2.0 in gap</strong> — shorter plunger throw and closer viewing.</p>
+<h3>The window does not open</h3>
+<p><strong>1/4 in cast acrylic</strong> (Plexiglas G, not extruded — better craze resistance), rabbeted in <em>from the inside</em> so water pressure seats it onto the gasket rather than lifting it off. Permanently bonded. A sliding seal on a vertical weather-facing surface is the hardest thing in the whole box to keep dry; bonding the pane removes the problem entirely.</p>
+<h3>The buttons do not need an opening either</h3>
+<p><strong>Sealed boot-plungers.</strong> A silicone pushbutton boot bonded over a hole, with a delrin plunger inside bridging the gap to the unit's button. Press the boot, it presses the button. Nothing opens, nothing seals and unseals.</p>
+<div class="note warn"><b>Leave a 3–4 mm rest gap.</b> If the foam settles or the unit shifts, a zero-clearance plunger could hold a button down permanently. The gap is what makes this safe.</div>
+<h3>The sliding element survives, with a different job</h3>
+<p>A <strong>sliding storm shutter</strong> rides over the fixed window. Because the seal is behind it, the shutter does not need to be waterproof at all — it guards the acrylic from UV and gravel. You keep a sliding panel, doing something it is actually good at.</p>
+<div class="note amber"><b>Know this before you rely on the window.</b> The manual notes the LCD switches off after a single press and the unit hibernates with the screen dark after 5 minutes of inactivity. A window alone shows you a dark screen most of the time — you press the power button to wake it, <em>then</em> read it. That makes the boot-plunger essential rather than a nicety, and it means the <b>EcoFlow app is your real at-a-glance state of charge</b>. You already need the app for AC timeout and AC-Always-On.</div>
+<h3>Materials</h3>
+<table><thead><tr><th>Item</th><th>Spec</th></tr></thead><tbody>
+<tr><td>Pane</td><td>1/4 in cast acrylic, Plexiglas G — rabbet from inside</td></tr>
+<tr><td>Bedding</td><td>3M VHB 5952 perimeter tape + Dow 795 or 3M 4200 fillet</td></tr>
+<tr><td>Boots</td><td>Silicone waterproof pushbutton boots, 16 mm panel-mount type</td></tr>
+<tr><td>Plungers</td><td>1/2 in delrin or nylon rod in a bushing, 3–4 mm rest gap</td></tr>
+<tr><td>Shutter track</td><td>UHMW or HDPE</td></tr>
 </tbody></table>
-<p>Cutouts are <code>4.5" (114 mm)</code> diameter, mounting holes on a <code>105 mm</code> square pattern.</p>
-<h3>Why the offsets matter</h3>
-<p>Centring both fans would drive air straight down the middle of the box and leave the side channels stagnant. Offsetting them to <em>opposite</em> sides forces the air to travel diagonally — in low on one side, along the full 25.6" length, out high on the other. That sweeps both side channels, which is exactly where the DELTA's own fans are breathing. It also moves each fan clear of the centre of the port face so cables have a corner to route through.</p>
-<h3>Sizing check</h3>
-<p>Worst case is the DELTA charging at 800 W while inverting for the Wave 2 — roughly 150 W of waste heat.</p>
-<p><code>Q = 3.16 × W ÷ ΔT°F  →  3.16 × 150 ÷ 12 = 40 CFM</code> for a 12 °F rise.</p>
-<p>Two 110 CFM fans derated 50% by the louvres still deliver 110 CFM — nearly triple the requirement. Run them on PWM at partial speed. Add a <strong>Demciflex 120 mm magnetic dust filter on the intake only</strong>; positive internal pressure then keeps dust out of the exhaust side. Control with a <strong>W1209</strong> or <strong>Inkbird ITC-306</strong>: on at 85 °F, off at 75 °F, fed from the aux 12 V circuit rather than from the DELTA.</p>
+<div class="note"><b>Never clean the acrylic with ammonia glass cleaner or anything solvent-based</b> — it crazes. Soap and water, microfibre. Oversize any fastener holes: acrylic expands about twice as much as plywood with temperature.</div>
 </section>
 
 <section>
-<h2><span class="num">04</span>Siting — the problem this rev solves</h2>
-<p>Rev A needed 3–4" of clear air on <em>both long faces</em>, which in a truck bed are the crowded surfaces — one faces a bed side, the other faces the drawer bank or the propane compartment. Getting that clearance meant giving up bed width.</p>
-<p>With end-mounted fans, the box sits with its long axis across the bed and its short ends looking fore and aft down the open length. The long faces can now sit tight against whatever they like.</p>
-<div class="note warn"><b>The one remaining requirement: both ends need clearance, not just the rear.</b> Keep 4" clear in front of each end wall. If only the rear end can be kept clear — say the box has to butt against the bulkhead — then move <b>both</b> fans to the rear wall instead: intake low, exhaust high, with a full-height vertical baffle between them inside the box so hot exhaust cannot short-circuit straight back into the intake. That configuration works but is measurably less effective, so treat it as the fallback rather than the plan.</div>
-</section>
-
-<section>
-<h2><span class="num">05</span>Sealed ↔ ventilated conversion</h2>
-<p>Three layers at each opening.</p>
-<ol>
-<li><strong>Exterior — louvred marine vent.</strong> Slats angled down and out. This alone sheds driving rain.</li>
-<li><strong>Middle — the fan.</strong></li>
-<li><strong>Interior — sliding shutter panel</strong> in a UHMW or HDPE track, closing onto a 1/8" EPDM gasket seat.</li>
-</ol>
-<div class="note amber"><b>The offsets pay off again here.</b> On a 13.5" wide end wall a centred 4.72" fan leaves only 4.4" of travel each side — not quite enough for the shutter to clear the opening. Offsetting the fan 2.5" off centre gives a full 5" of travel to the open side, so the shutter clears completely instead of half-covering the fan.</div>
-<div class="note"><b>The detail that makes it seal.</b> Cut the shutter track with a <b>1/32" taper over the last 2" of travel</b> so the panel wedges hard onto the gasket as it closes. That is the difference between a cover and a seal, and it is a router-table job. Simpler alternative: two rare-earth magnets pulling the panel onto the gasket.</div>
-<div class="note warn"><b>Fit a Gore PolyVent pressure-equalisation plug</b> high on one long wall — the end walls are now busy. With the shutters closed the box is otherwise airtight, and a sealed wooden box through a Nebraska temperature swing becomes a condensation trap. The Gore vent passes air and water vapour while blocking liquid water.</div>
+<h2><span class="num">05</span>The power end</h2>
+<p>Six AC sockets, the X-Stream AC inlet, the solar/car XT60, DC5521 outputs, car socket, AC ON/OFF and 12V DC ON/OFF all live on this end. It gets the <strong>wider 3.5 in gap</strong> for plug bodies and cable bend radius, and it carries the <strong>cable glands</strong> — the shortest possible run to every connector.</p>
+<p>These are permanent connections. Wire them once and the box never needs opening for normal use: the AC patch to the drawer distribution and the XT150 to the alternator charger both live through the glands.</p>
 </section>
 
 <section>
 <h2><span class="num">06</span>Foam and shock protection</h2>
 <p><strong>Minicel T200 cross-linked closed-cell polyethylene</strong>, 2 lb/ft³ — the whitewater kayak outfitting standard. Zero water absorption, tough, cuts clean, holds shape indefinitely.</p>
 <table><thead><tr><th>Location</th><th>Size</th><th>Thickness</th><th>Purpose</th></tr></thead><tbody>
-<tr><td>Base slab</td><td>21 × 11</td><td><strong>1"</strong></td><td>Impact absorption</td></tr>
-<tr><td>Long-wall ribs ×4</td><td>3 × 12</td><td>2"</td><td>Side-to-side restraint at the DELTA's corners</td></tr>
-<tr><td>End blocks ×2</td><td>3 × 12</td><td>3"</td><td>Fore-aft restraint — one per end, offset opposite the fan</td></tr>
-<tr><td>Lid crush pads ×2</td><td>4 × 9.5</td><td><strong>2"</strong></td><td>Vertical capture when the lid latches</td></tr>
+<tr><td>Base slab</td><td>21 × 11</td><td><strong>1 in</strong></td><td>Impact absorption</td></tr>
+<tr><td>Corner ribs ×4</td><td>3 × 10</td><td>2 in</td><td>Restraint at the unit's corners</td></tr>
+<tr><td>Lid crush pads ×2</td><td>4 × 9.5</td><td><strong>2.5 in</strong></td><td>Vertical capture when the latches close</td></tr>
 </tbody></table>
-<p>Adhesive: <strong>DAP Weldwood Contact Cement</strong>, the solvent original rather than the water-based version.</p>
-<div class="note"><b>Foam touches corners only, never faces.</b> All four faces of the DELTA have to stay open — the long faces because that is where its own fans breathe, and the ends because that is where the enclosure fans blow. So the ribs contact only near the DELTA's corners and each end block sits offset to the side opposite its fan. Between base, ribs, end blocks and lid pads the unit is held in all six directions with no strap required.</div>
+<p>Adhesive: <strong>DAP Weldwood Contact Cement</strong>, solvent original rather than water-based.</p>
+<div class="note"><b>Foam touches corners only, never faces, and the ribs start 3.5 in up.</b> The long faces must stay open because that is where the unit breathes, and the rib band has to clear the intake slots below it. Between base slab, corner ribs and lid pads the unit is held in all six directions with no strap.</div>
 </section>
 
 <section>
 <h2><span class="num">07</span>Sealants and adhesives</h2>
 <table><thead><tr><th>Job</th><th>Product</th><th>Notes</th></tr></thead><tbody>
-<tr><td>Edge encapsulation</td><td><strong>TotalBoat Penetrating Epoxy Sealer</strong>, or West System 105 + 207 Special Clear</td><td>2–3 coats on every cut edge before assembly. Untreated ply end grain is how water gets in</td></tr>
-<tr><td>Structural fillets</td><td><strong>West System 105 resin + 205 Fast hardener + 406 Colloidal Silica</strong></td><td>Peanut-butter consistency, 3/8" radius on all interior joints. This <em>is</em> the waterproofing</td></tr>
-<tr><td>Lid gasket</td><td><strong>Trim-Lok EPDM closed-cell sponge, 1/2" W × 1/4" T</strong>, adhesive backed</td><td>EPDM not neoprene — UV and ozone resistant. Butt the ends, never overlap</td></tr>
-<tr><td>Flanged hardware bedding</td><td><strong>Bed-It Butyl Tape</strong> (Compass Marine)</td><td>Vents, glands, hinge. Never hardens, always removable</td></tr>
+<tr><td>Edge encapsulation</td><td><strong>TotalBoat Penetrating Epoxy Sealer</strong>, or West System 105 + 207</td><td>2–3 coats on every cut edge before assembly. Untreated ply end grain is how water gets in</td></tr>
+<tr><td>Structural fillets</td><td><strong>West System 105 + 205 + 406 Colloidal Silica</strong></td><td>Peanut-butter consistency, 3/8 in radius on all interior joints. This <em>is</em> the waterproofing</td></tr>
+<tr><td>Lid gasket</td><td><strong>Trim-Lok EPDM closed-cell sponge, 1/2 × 1/4 in</strong></td><td>EPDM not neoprene — UV and ozone resistant. Butt the ends, never overlap</td></tr>
+<tr><td>Flanged hardware bedding</td><td><strong>Bed-It Butyl Tape</strong></td><td>Vents, glands, latch pads. Never hardens, always removable</td></tr>
 <tr><td>Fasteners and fillet seals</td><td><strong>3M 4200 Fast Cure</strong></td><td><strong>Not 5200.</strong> 5200 is permanent — you will destroy the plywood getting it apart</td></tr>
-<tr><td>Exterior coating</td><td><strong>TotalBoat Wet Edge</strong> topside paint, 2 coats over epoxy</td><td>Paint beats varnish here; UV kills varnish on a horizontal surface</td></tr>
+<tr><td>Exterior coating</td><td><strong>TotalBoat Wet Edge</strong> topside paint, 2 coats over epoxy</td><td>Paint beats varnish; UV kills varnish on a horizontal surface</td></tr>
 </tbody></table>
 </section>
 
 <section>
 <h2><span class="num">08</span>Hardware schedule</h2>
 <table><thead><tr><th>Item</th><th>Specification</th></tr></thead><tbody>
-<tr><td>Fans ×2</td><td>Noctua NF-F12 industrialPPC-3000 PWM, 120 mm</td></tr>
-<tr><td>Fan guards</td><td>Noctua NA-FG1-12</td></tr>
-<tr><td>Intake filter</td><td>Demciflex 120 mm magnetic</td></tr>
-<tr><td>Thermostat</td><td>W1209 or Inkbird ITC-306, 12 V</td></tr>
-<tr><td>Lid hinge</td><td>Stainless piano hinge, 25", bedded in butyl</td></tr>
+<tr><td>Exhaust fan</td><td>Noctua NF-F12 industrialPPC-3000 PWM, 120 mm</td></tr>
+<tr><td>Fan guard</td><td>Noctua NA-FG1-12</td></tr>
+<tr><td>Thermostat</td><td>W1209 or Inkbird ITC-306, 12 V, on 85 °F / off 75 °F</td></tr>
+<tr><td>Rain cap</td><td>Fabricated: coaming ring + raised disc on three standoffs</td></tr>
 <tr><td>Latches ×4</td><td>Stainless over-centre draw latches (Southco C5 or Sea-Dog)</td></tr>
-<tr><td>Cable entry ×2</td><td>Scanstrut DS-H10-BLK deck seals — mount on a <strong>long</strong> wall now, clear of the fans</td></tr>
-<tr><td>Pressure vent</td><td>Gore PolyVent or Bud Industries IPV series, long wall</td></tr>
-<tr><td>Louvred vents ×2</td><td>Marine louvred vent plate, approx. 6", slats angled down</td></tr>
+<tr><td>Hinge</td><td><strong>None.</strong> The lid is fully removable — four latches clamp it and you lift it straight off</td></tr>
+<tr><td>Cable entry ×2</td><td>Scanstrut DS-H10-BLK, power end</td></tr>
+<tr><td>Pressure vent</td><td>Gore PolyVent or Bud Industries IPV, long wall, clear of the latches</td></tr>
+<tr><td>Window</td><td>1/4 in cast acrylic + silicone boots + delrin plungers</td></tr>
 </tbody></table>
-<div class="note"><b>Cable glands moved to a long wall.</b> In Rev A they shared an end wall with nothing else. The fans now own both ends, so the glands and the Gore vent relocate to a long face — which is also the shorter cable run to the bus bars.</div>
+<div class="note"><b>No hinge is deliberate.</b> A hinge fixes which way the lid opens and adds a second sealing interface to get right. With four latches and a removable lid you can lift it off in whichever direction the drawer bay allows, and the gasket sees even clamping pressure all the way round.</div>
 </section>
 
 <section>
 <h2><span class="num">09</span>Build sequence</h2>
 <ol>
 <li>Cut all six panels. Dry-fit before any epoxy touches anything.</li>
-<li>Cut the two 4.5" fan openings in the end walls, offset 2.5" to opposite sides, and the gland and Gore vent holes in a long wall — all while the panels are flat.</li>
-<li>Rout the shutter tracks on the end walls, including the 1/32" taper over the final 2" of travel.</li>
-<li>Seal every cut edge and both faces of every panel with penetrating epoxy, 2–3 coats.</li>
+<li><strong>Measure your own unit first.</strong> From a fixed datum — the bottom of the case — record the centre height of the LCD, its width and height, and the centre of the power button. Five measurements. Everything else in this box tolerates a quarter inch; a window and a plunger bore do not.</li>
+<li>Cut the window rabbet, the plunger bores, the 4.5 in lid fan opening, the intake slots and the gland holes while the panels are flat.</li>
+<li>Rout the shutter track and the intake damper tracks, including the 1/32 in taper over the final 2 in of travel.</li>
+<li>Seal every cut edge and both faces with penetrating epoxy, 2–3 coats.</li>
 <li>Assemble walls to base; fillet all interior joints with thickened epoxy.</li>
 <li>Fair, prime and paint the exterior. Two coats of topside paint.</li>
-<li>Bed and fit the louvred vents, glands, Gore vent, hinge and latches in butyl.</li>
-<li>Fit fans, guards, filter and thermostat. <strong>Bench-test airflow direction before closing up</strong> — an intake fan installed backwards is invisible until the box cooks.</li>
-<li>Cut and glue foam: base slab, four long-wall ribs, two offset end blocks, two lid crush pads.</li>
-<li>Apply the EPDM gasket to the wall rim, butting the ends. Set the unit, run the cables, latch down.</li>
+<li>Bed and fit the drip hoods, glands, Gore vent, coaming, cap and latch pads in butyl.</li>
+<li>Bond the acrylic pane and the boot-plungers. Check plunger alignment and rest gap with the unit in place <em>before</em> the adhesive cures.</li>
+<li>Fit fan, guard and thermostat. <strong>Bench-test airflow direction before closing up</strong> — a fan installed backwards is invisible until the box cooks.</li>
+<li>Cut and glue foam: base slab, four corner ribs, two lid crush pads.</li>
+<li>Apply the EPDM gasket to the rim, butting the ends. Set the unit, run the cables, latch down.</li>
 </ol>
 </section>
+
+<section>
+<h2><span class="num">10</span>Weight and siting</h2>
+<div class="note warn"><b>Weight.</b> The finished enclosure adds roughly 24 lb, taking the permanent rear-axle load from about 167 lb to <b>191 lb</b>. Mount it forward of the rear axle centreline, where weight splits between both axles instead of levering off the rear.</div>
+<div class="note"><b>Siting is no longer critical.</b> With passive intakes and a lid exhaust, the long walls need an inch or two of standoff rather than 3–4 in of fan clearance, and both short ends need only enough room to reach the connections. This was the constraint that drove three earlier revisions.</div>
+</section>
+
 </div></main>
 <footer><div class="wrap">Design spec for a personal build. Verify all part numbers and dimensions against your own measurements before cutting or ordering — every truck bed and drawer system differs.</div></footer>
 
@@ -214,136 +226,26 @@ a{color:var(--accent)}
 <script type="module">
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-const canvas=document.getElementById('c'); document.getElementById('load').remove();
-const scene=new THREE.Scene(); scene.background=new THREE.Color(0x15181d);
+import {build} from './model.js';
+const canvas=document.getElementById('c');const ld=document.getElementById('load');if(ld)ld.remove();
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x15181d);
 const camera=new THREE.PerspectiveCamera(45,1,0.1,900);
 const renderer=new THREE.WebGLRenderer({canvas,antialias:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));
 function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;
-  renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
+ renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
 addEventListener('resize',resize);
 const controls=new OrbitControls(camera,renderer.domElement);
 controls.enableDamping=true;controls.dampingFactor=.06;controls.target.set(0,4,0);
-camera.position.set(46,25,44);controls.autoRotate=true;controls.autoRotateSpeed=.55;
+camera.position.set(48,24,40);controls.autoRotate=true;controls.autoRotateSpeed=.5;
 ['pointerdown','wheel','touchstart'].forEach(e=>canvas.addEventListener(e,()=>controls.autoRotate=false,{passive:true}));
 scene.add(new THREE.AmbientLight(0xffffff,.55));
-const k=new THREE.DirectionalLight(0xffffff,.85);k.position.set(25,35,20);scene.add(k);
+const k=new THREE.DirectionalLight(0xffffff,.85);k.position.set(30,35,25);scene.add(k);
 const f=new THREE.DirectionalLight(0x88aaff,.35);f.position.set(-25,10,-18);scene.add(f);
-const r2=new THREE.DirectionalLight(0xffd9a0,.3);r2.position.set(0,-15,25);scene.add(r2);
-const G=new THREE.Group();scene.add(G);
-const M=o=>new THREE.MeshStandardMaterial(o);
-const ply=M({color:0xC69C6D,roughness:.85,transparent:true,opacity:.28,side:THREE.DoubleSide});
-const plyEd=M({color:0xB08654,roughness:.9,transparent:true,opacity:.55});
-const delta=M({color:0x2B2F36,roughness:.55,metalness:.25});
-const deltaTop=M({color:0x3A4049,roughness:.5,metalness:.3});
-const foamM=M({color:0x2E8B84,roughness:1,transparent:true,opacity:.9});
-const foamM2=M({color:0x46B3AA,roughness:1,transparent:true,opacity:.9});
-const gasketM=M({color:0xE24B4A,roughness:.7,emissive:0x2a0806});
-const epoxyM=M({color:0xC98A2E,roughness:.35,metalness:.15,emissive:0x2a1c05});
-const butylM=M({color:0x7B5EA7,roughness:.9});
-const fanM=M({color:0x24262B,roughness:.6,metalness:.3});
-const fanHub=M({color:0x8B6F47,roughness:.5});
-const ventM=M({color:0x5A6068,roughness:.5,metalness:.5});
-const shutM=M({color:0xD8DDE3,roughness:.4,transparent:true,opacity:.92});
-const hwM=M({color:0x9AA3AD,roughness:.35,metalness:.7});
-function box(w,h,d,mat,x,y,z,rx,ry,rz){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);
-  m.position.set(x,y,z);if(rx)m.rotation.x=rx;if(ry)m.rotation.y=ry;if(rz)m.rotation.z=rz;G.add(m);return m;}
-function cyl(rr,h,mat,x,y,z,ax){const m=new THREE.Mesh(new THREE.CylinderGeometry(rr,rr,h,36),mat);
-  m.position.set(x,y,z);if(ax==='z')m.rotation.x=Math.PI/2;if(ax==='x')m.rotation.z=Math.PI/2;G.add(m);return m;}
-function edge(m,c){const e=new THREE.LineSegments(new THREE.EdgesGeometry(m.geometry),
-  new THREE.LineBasicMaterial({color:c||0,transparent:true,opacity:.5}));
-  e.position.copy(m.position);e.rotation.copy(m.rotation);G.add(e);}
-const PPU=74,WRAP_PX=760;
-const TITLE_F='bold 56px -apple-system,"Segoe UI",Helvetica,Arial';
-const BODY_F='42px -apple-system,"Segoe UI",Helvetica,Arial';
-const PAD=30,TLH=70,BLH=54;
-const meas=document.createElement('canvas').getContext('2d');
-function wrapText(s,font,max){meas.font=font;const w=s.split(' ');const o=[];let l='';
-  for(const x of w){const t=l?l+' '+x:x;if(meas.measureText(t).width>max&&l){o.push(l);l=x;}else l=t;}
-  if(l)o.push(l);return o;}
-function rrect(c,x,y,w,h,rad){c.beginPath();c.moveTo(x+rad,y);c.arcTo(x+w,y,x+w,y+h,rad);
-  c.arcTo(x+w,y+h,x,y+h,rad);c.arcTo(x,y+h,x,y,rad);c.arcTo(x,y,x+w,y,rad);c.closePath();}
-function makeLabel(title,body,color,pos){
-  const tL=wrapText(title,TITLE_F,WRAP_PX+120),bL=body?wrapText(body,BODY_F,WRAP_PX):[];
-  meas.font=TITLE_F;let mw=0;tL.forEach(l=>mw=Math.max(mw,meas.measureText(l).width));
-  meas.font=BODY_F;bL.forEach(l=>mw=Math.max(mw,meas.measureText(l).width));
-  const W=Math.ceil(mw+PAD*2),H=Math.ceil(tL.length*TLH+bL.length*BLH+PAD*2);
-  const cv=document.createElement('canvas');cv.width=W;cv.height=H;const c=cv.getContext('2d');
-  c.fillStyle='rgba(12,15,20,0.80)';rrect(c,1,1,W-2,H-2,18);c.fill();
-  c.strokeStyle=color;c.globalAlpha=.55;c.lineWidth=3;c.stroke();c.globalAlpha=1;
-  let y=PAD;c.textAlign='left';c.textBaseline='top';
-  c.font=TITLE_F;c.fillStyle=color;tL.forEach(l=>{c.fillText(l,PAD,y);y+=TLH;});
-  c.font=BODY_F;c.fillStyle='#C3CCD6';bL.forEach(l=>{c.fillText(l,PAD,y);y+=BLH;});
-  const t=new THREE.CanvasTexture(cv);t.minFilter=THREE.LinearFilter;t.magFilter=THREE.LinearFilter;
-  t.anisotropy=renderer.capabilities.getMaxAnisotropy();
-  const s=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthTest:false}));
-  s.position.set(...pos);s.scale.set(W/PPU,H/PPU,1);s.renderOrder=999;G.add(s);}
-function leader(a,b,c){G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(
-  [new THREE.Vector3(...a),new THREE.Vector3(...b)]),new THREE.LineBasicMaterial({color:c,transparent:true,opacity:.8})));
-  const d=new THREE.Mesh(new THREE.SphereGeometry(.22,12,12),new THREE.MeshBasicMaterial({color:c}));
-  d.position.set(...a);G.add(d);}
-function callout(t,b,c,a,at){leader(a,at,c);makeLabel(t,b,c,at);}
-/* Rev B: ext 26.375 (X) x 15.875 (Y) x 14.25 (Z); interior 25.625 x 15 x 13.5 */
-const T=.375,B=.5;
-edge(box(26.375,B,14.25,plyEd,0,B/2,0),0x4a3520);
-edge(box(26.375,15,T,ply,0,8,-6.9375),0x4a3520);
-edge(box(26.375,15,T,ply,0,8,6.9375),0x4a3520);
-edge(box(T,15,13.5,ply,-13.0,8,0),0x4a3520);
-edge(box(T,15,13.5,ply,13.0,8,0),0x4a3520);
-edge(box(26.375,T,14.25,plyEd,0,22.6875,0),0x4a3520);
-const fs=.55;
-box(25.625,fs,fs,epoxyM,0,.62,-6.63,Math.PI/4,0,0);
-box(25.625,fs,fs,epoxyM,0,.62,6.63,Math.PI/4,0,0);
-box(fs,fs,13.5,epoxyM,-12.57,.62,0,0,0,Math.PI/4);
-box(fs,fs,13.5,epoxyM,12.57,.62,0,0,0,Math.PI/4);
-[[-12.57,-6.63],[-12.57,6.63],[12.57,-6.63],[12.57,6.63]].forEach(p=>box(fs,15,fs,epoxyM,p[0],8,p[1],0,Math.PI/4,0));
-box(21,1,11,foamM,0,1,0);
-[[-7.5,-5.75],[7.5,-5.75],[-7.5,5.75],[7.5,5.75]].forEach(p=>box(3,12,2,foamM2,p[0],7.5,p[1]));
-box(3,12,3,foamM2,11.3,7.5,3.2);
-box(3,12,3,foamM2,-11.3,7.5,-3.2);
-box(4,2,9.5,foamM2,-7.5,21.5,0);box(4,2,9.5,foamM2,7.5,21.5,0);
-edge(box(19.6,12,9.5,delta,0,7.5,0),0x11141a);
-box(19.6,.35,9.5,deltaTop,0,13.65,0);
-box(6,3.2,.12,M({color:0x0E1013,roughness:.4}),9.85,10.2,0,0,Math.PI/2,0);
-for(let i=-1;i<=1;i++)box(1.5,1.5,.12,M({color:0x1A1D22}),9.85,6.4,i*2.6,0,Math.PI/2,0);
-function fanAssy(x,y,z,dir){cyl(2.362,1,fanM,x,y,z,'x');cyl(.9,1.15,fanHub,x,y,z,'x');
-  for(let i=0;i<7;i++){const a=i*Math.PI*2/7;box(.5,.14,2.5,fanHub,x,y+Math.sin(a)*1.55,z+Math.cos(a)*1.55,a,0,0);}
-  const xo=x+dir*.95;cyl(3.05,.12,butylM,x+dir*.55,y,z,'x');box(.22,6.2,6.2,ventM,xo,y,z);
-  for(let i=-2;i<=2;i++)box(.5,.4,5.6,ventM,xo+dir*.22,y+i*1.1,z,Math.PI/9*dir,0,0);}
-fanAssy(12.31,5.0,-2.5,1);
-fanAssy(-12.31,12.0,2.5,-1);
-box(.45,.3,6.6,hwM,11.6,8.9,0);box(.45,.3,6.6,hwM,11.6,1.1,0);
-box(.28,6.6,6.6,shutM,11.6,5.0,3.3);
-box(.45,.3,6.6,hwM,-11.6,15.9,0);box(.45,.3,6.6,hwM,-11.6,8.1,0);
-box(.28,6.6,6.6,shutM,-11.6,12.0,2.5);
-box(.12,6.8,6.8,gasketM,-11.82,12.0,2.5);
-box(26.375,.28,T,gasketM,0,15.64,-6.9375);box(26.375,.28,T,gasketM,0,15.64,6.9375);
-box(T,.28,13.5,gasketM,-13.0,15.64,0);box(T,.28,13.5,gasketM,13.0,15.64,0);
-cyl(.55,1.2,hwM,-4,4.5,7.35,'z');cyl(.55,1.2,hwM,-1,4.5,7.35,'z');
-cyl(.42,1,ventM,5,13.2,7.35,'z');
-[[-9,-7.3],[9,-7.3],[-9,7.3],[9,7.3]].forEach(p=>box(1.5,2.2,.5,hwM,p[0],14.2,p[1]));
-box(25,.5,.6,hwM,0,15.5,7.4);
-callout('EcoFlow DELTA 2 Max','19.6 × 9.5 × 12 in · 50 lb · ports on the short ends','#EAF0F6',[0,7.5,0],[0,-12,0]);
-callout('INTAKE FAN — rear end wall','Noctua NF-F12 iPPC-3000 · 120 mm · low · offset 2.5 in off centre','#9AD6FF',[12.4,5,-2.5],[30,-3,-14]);
-callout('EXHAUST FAN — front end wall','High, offset to the opposite side. Forces a diagonal sweep of both side channels','#9AD6FF',[-12.4,12,2.5],[-31,23,10]);
-callout('SLIDING SHUTTER — OPEN','Offsetting the fan gives a full 5 in of shutter travel','#E6EBF0',[11.6,5,3.3],[27,10,16]);
-callout('SHUTTER — CLOSED','Tapered track wedges the panel onto an EPDM seat','#E6EBF0',[-11.7,12,2.5],[-28,16,19]);
-callout('Louvred marine vent','Slats angled down and out. Faces the open length of the bed','#A9B2BC',[13.6,5,-2.5],[24,-9,-18]);
-callout('Minicel T200 foam base','1 in cross-linked closed-cell PE · zero water absorption','#46B3AA',[0,1,0],[22,-8,13]);
-callout('Corner ribs + offset end blocks','Foam touches corners only — all four faces stay open for airflow','#46B3AA',[7.5,7.5,-5.75],[16,-15,-16]);
-callout('EPDM lid gasket','1/2 × 1/4 in closed-cell sponge, adhesive backed','#FF8A87',[0,15.64,-6.94],[-14,26,-16]);
-callout('Epoxy fillet','West System 105/205 + 406 colloidal silica, 3/8 in radius','#F0B44E',[-12.57,8,-6.63],[-32,10,-9]);
-callout('LID — shown exploded','3/8 in BS1088 · piano hinge + 4 stainless draw latches','#E0C39A',[0,22.7,0],[16,32,-11]);
-callout('Cable glands + Gore vent','Moved to a long wall — the fans now own both ends','#C7CFD8',[-2.5,4.5,7.4],[-20,-6,20]);
-callout('BS1088 marine plywood','3/8 in walls and lid · 1/2 in base · all edges epoxy sealed','#E0C39A',[0,.25,-7.1],[10,-19,-19]);
-function dim(a,b,t){G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(
-  [new THREE.Vector3(...a),new THREE.Vector3(...b)]),new THREE.LineBasicMaterial({color:0x6FD3C7})));
-  makeLabel(t,null,'#6FD3C7',[(a[0]+b[0])/2,(a[1]+b[1])/2,(a[2]+b[2])/2]);}
-dim([-13.19,-3.2,7.13],[13.19,-3.2,7.13],'26.375 in');
-dim([14.6,0,-7.13],[14.6,15.875,-7.13],'15.875 in');
-dim([-13.19,-3.2,-7.13],[-13.19,-3.2,7.13],'14.25 in');
-const grid=new THREE.GridHelper(76,26,0x2c3138,0x21262c);grid.position.y=-3.6;scene.add(grid);
-G.position.y=-4;resize();
+const r=new THREE.DirectionalLight(0xffd9a0,.3);r.position.set(0,-15,25);scene.add(r);
+build(THREE,scene,renderer);
+const grid=new THREE.GridHelper(78,26,0x2c3138,0x21262c);grid.position.y=-8.8;scene.add(grid);
+resize();
 (function loop(){requestAnimationFrame(loop);controls.update();renderer.render(scene,camera);})();
 </script>
 </body>
